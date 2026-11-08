@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-agent-starter"
+version = "0.1.0"
+description = "A production-shaped LangGraph plus MCP agent template that other builders can fork and extend."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Saif Ullah", email = "saifullahrao089@gmail.com" }]
+keywords = ["langgraph", "mcp", "ai-agents", "agent-template", "automation"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "langgraph==1.2.20",
+    "mcp==2.3.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/saifullah-ai-engineer/mcp-agent-starter"
+Repository = "https://github.com/saifullah-ai-engineer/mcp-agent-starter"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

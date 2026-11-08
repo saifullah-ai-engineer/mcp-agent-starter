@@ -1,0 +1,16 @@
+# Example config for mcp-agent-starter. Copy it and change the values.
+# Run it with: python -m mcp_agent_starter "your task" --config config.toml
+
+[agent]
+# The agent stops after this many tool calls, even if the plan is longer.
+max_steps = 6
+
+[tools]
+# The folder the file search tool may read. Use "." for the current folder.
+workspace = "."
+# Most matches the file search returns for one call.
+max_results = 5
+# Seconds before a web fetch gives up.
+fetch_timeout_seconds = 10
+# Most characters kept from a fetched page.
+fetch_max_chars = 4000
